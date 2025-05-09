@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.popup h2{
+/* color: red; */
+font-weight: bolder;
+font-size: 2.5rem;
+margin-bottom: 3rem;
+text-transform: uppercase;
+display: flex;
+}
+
+h1{
+    color:rgb(19, 155, 233); 
+    text-transform: uppercase;
+
+
+    border-radius: 20px;
+    
+}
+
+
+.img-box img{
+height: 100px;
+width: 100px;
+margin: 20px;
+color: rgb(19, 155, 233);
+}
+
+.img-box{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background-color: #333333c5;
+    border-radius: 30px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+
+
+}
+
+.felx, button{
+   height: 4rem;
+   font-size: 2rem;
+}
+
+.popup {
+    border-radius: 15px;
+    /* width: 30% */
+   
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    display: none;
+    align-items: center;
+    z-index: 1000;
+
+    animation: bounceIn 0.75s ease-out both;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.3);
+    }
+    20% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+    40% {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.03);
+    }
+    80% {
+        transform: translate(-50%, -50%) scale(0.97);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+
+ .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}  
+    
+
+
+.box , h1{
+     font-size: 3rem;
+
+      margin: 0px; 
+
+    font-size: 100px; font-family: "Open Sans", sans-serif;   font-weight: bold;
+      text-shadow: 0 4px 4px rgba(0, 0, 0, .25);text-transform: uppercase;
+    text-align: center;
+}
+.number{
+    width: 37rem;
+}
+
+input {
+    /* max-width: 35rem; */
+
+    /* height: 2rem; */
+    background-color: transparent;
+    border: 2px solid transparent;
+    margin: 1rem 0px 1rem 0px;
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+  
+    box-shadow: inset 11px 11px 20px 9px rgba(0,0,0,0.1);
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.3rem;
+}
+
+input:hover ,input:focus {
+        border: 2px solid #4A9DEC;
+        box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+        background-color: white;
+}
+.inp-tab{
+    /* padding: 20px; */
+
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+
+.heading2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.main{
+    width: 100vw;
+    height: 100vh;border-radius: 50px;
+    /* background: #e0e0e0;
+    box-shadow: inset -20px -20px 60px #bebebe,
+                inset 20px 20px 60px #ffffff; */
+}
+
+.box {
+    /* border: 2px solid red; */
+    width: 90%;
+ 
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 50px;
+    -webkit-box-shadow: inset 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: inset 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: inset 8px 8px 24px 0px rgba(66, 68, 90, 1);
+
+    
+}
+
+.tbl{
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+table {
+    margin: auto;
+    /* width: 40%; */
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  
+
+
+
+
+
+    margin-top: 2.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    /* padding: 12px; */
+    text-align: center;
+
+
+    /* box-shadow: 8px 8px 24px 0px #848488; */
+  
+    padding: 1.5rem 24px;
+    text-align: left;
+    border: 1px solid #dddddd;
+    color: #555;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+th {
+    background-color: green;
+    color: white;
+
+    text-align: center;
+
+
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    border-radius: 10px 10px 0 0;
+    padding: 30px 24px;
+}
+
+
+th:hover{
+    /* background: linear-gradient(45deg, #f2fcfe,green); */
+    /* transform: scale(1.1);  */
+    /* box-shadow: 4px 8px 24px rgba(0, 0, 0, 0.3);  */
+    /* transition: ease-in-out ; */
+  }
+
+td{
+    text-align: center;
+
+
+    font-size: 2rem;
+
+}
+
+td input {
+    width: 100%;
+  
+    border: 1px solid #ccc;
+
+}
+.ADD_CREATE-BTN{
+    position: fixed;
+}
+.addrow{
+     /* margin-top: 15px; */
+    margin-left: 143rem; 
+    background-color: darkgreen;
+    color: white;
+
+
+
+}
+
+#Trash-button{
+    background-color: red; 
+    color: white;
+}
+
+.Newtabel_tarsh{
+background-color: red;
+color: white;
+}
+
+button {
+  
+    margin: 10px;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 25px; 
+    color: #000000;
+    /* background: linear-gradient(45deg,green, #f2fcfe);  */
+    font-weight: bold;
+    font-size: 25px;
+    box-shadow: 4px 8px 19px rgba(0, 0, 0, 0.2);
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+  }
+
+   button:hover {
+  
+   
+    transform: scale(1.05); 
+    box-shadow: 4px 8px 24px rgba(0, 0, 0, 0.3); 
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+ 
+
+
+
+   .column-hours-table {
+    width: 200px; 
+    font-size: 12px; 
+    border-collapse: collapse;
+}
+
+.column-hours-table th,
+.column-hours-table td {
+    padding: 4px 8px; 
+    text-align: center;
+}
+
+.column-hours-table th {
+    background-color: #f0f0f0; 
+    font-weight: bold;
+}
+
+.column-hours-table td {
+    border: 1px solid #ccc;
+}
+
+
+
+.spiner-perent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+ 
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}  */
+
+ .spinner {
+    position: relative;
+    left: 88rem;
+    top: 41rem;
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db; 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none;
+}
+
+.button-container{
+    margin-top: 10px;
+    text-align: right;
+    /* background-color: #007bff; */
+}
+ 
+
+
+.add-row-btn{
+/* background-color: green; */
+    background-color: darkgreen;
+    color: white;
+
+
+}
+.proceed-btn{
+    background-color: #4A9DEC;
+    color: white;
+}
+
+
+ .button-container {
+    margin-top: 10px;
+    text-align: right;
+    position: relative;
+    left: 140px;
+}
+
+.button-container button {
+    /* background: none; */
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.button-container button i {
+
+    transition: 0.3s;
+}
+
+
+ #calculateHoursBtn{
+
+    background-color: #000000;
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+margin-right: 6rem;
+ }
+
+
+ #createTableBtn{
+
+    background-color: #000000;
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+ }
+ .back-button{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    position: relative;
+    right: 177rem;
+    font-weight: 900;
+   
+}
+
+.backButton{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+
+position: relative;
+
+right: 80rem;
+margin: 1rem ;
+margin-right: 9rem;
+}
+
+
+.dynamic-table textarea {
+    background-color: transparent;
+    border: 2px solid transparent;
+    margin: 1rem 0px 1rem 0px;
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+  
+    box-shadow: inset 11px 11px 20px 9px rgba(0,0,0,0.1);
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    resize: none;
+}
+
+.dynamic-table textarea:hover  {
+border: 2px solid #4A9DEC;
+box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+background-color: white; }
+
+
+
+#long-textare {
+
+ white-space: normal;
+    word-wrap: break-word; 
+width: 60rem;
+height: 7rem;
+}
+
+#long-textare::-webkit-scrollbar{
+    width: 0px;
+}
+ #small-textare{
+    width: 31rem;
+ }
+ #small-textare::-webkit-scrollbar{
+    width: 0px;
+}
+
+td select {
+    width: 100%;
+  
+    border: 1px solid #ccc;
+
+}
+.section-tab{
+    background-color: transparent;
+    border: 2px solid transparent;
+    margin: 1rem 0px 1rem 0px;
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+  
+    box-shadow: inset 11px 11px 20px 9px rgba(0,0,0,0.1);
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.3rem;
+}
+.section-tab:hover{
+    border: 2px solid #4A9DEC;
+    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    background-color: white;
+}
+.button-container2{
+    
+  position: relative;
+  left: 75rem;
+  bottom: 5rem;
+} 
+
+#printPDF{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+
+
+    font-weight: 900;
+   
+}
+
+#exportExcel{
+
+ background-color: #000000;
+ color: rgb(255, 255, 255);
+
+/* margin-left: 10rem; */
+ font-weight: 900;
+
+
+}
